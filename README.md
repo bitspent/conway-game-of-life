@@ -1,13 +1,10 @@
-<<<<<<< HEAD
-# Conway Game Of Life - MultisessionRules
-=======
 ### [HEROKU ONE CLICK DEPLOY](https://www.heroku.com/deploy/?template=https://github.com/nnmix/conway-game-of-life)
 
 ### MANUAL DEPLOY
 
 make sure you have node on your system, clone the repo or unzip the downoaded package
 
-> cd (to unzip directory)
+> cd (to the project directory)
   
 > npm install
 
@@ -18,7 +15,6 @@ accessible locally by default on http://localhost:5000
 
 # Conway Game Of Life - Multisession Rules
 
->>>>>>> f070ef235ead99b6bb8704b5f800259ee2030b37
 All Players share the same world, seed and creation within a specific color
 Creating / Overriding existing (others) cell is no allowed
 
