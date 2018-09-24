@@ -4,7 +4,7 @@
 
 make sure you have node on your system, clone the repo or unzip the downoaded package
 
-> cd <unzip directory>
+> cd (to unzip directory)
   
 > npm install
 
