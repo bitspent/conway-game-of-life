@@ -130,7 +130,7 @@ let conway = {
      * return a next random colour to use
      */
     nextColor: function () {
-        conway.colorStep = conway.colorStep + 1 % conway.colorSteps;
+        conway.colorStep = (conway.colorStep + 1) % conway.colorSteps;
         return tools.colorNext(conway.colorSteps, conway.colorStep);
     }
 };
