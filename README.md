@@ -4,7 +4,7 @@ All Players share the same world, seed and creation within a specific color
 
 Creating / Overriding existing (others) cell is no allowed
 
-You can see only on empty location within your own color!
+You can seed only on empty location within your own color
 
 # Game Of Life Rules
 
