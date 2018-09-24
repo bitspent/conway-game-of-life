@@ -1,4 +1,4 @@
-# [HEROKU ONE CLICK DEPLOY](https://www.heroku.com/deploy/?template=https://github.com/nnmix/conway-game-of-life)
+### [HEROKU ONE CLICK DEPLOY](https://www.heroku.com/deploy/?template=https://github.com/nnmix/conway-game-of-life)
 
 
 # Conway Game Of Life - Multisession Rules
