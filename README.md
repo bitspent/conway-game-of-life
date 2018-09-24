@@ -1,6 +1,6 @@
-### [HEROKU ONE CLICK DEPLOY](https://www.heroku.com/deploy/?template=https://github.com/nnmix/conway-game-of-life)
+### - [HEROKU ONE CLICK DEPLOY](https://www.heroku.com/deploy/?template=https://github.com/nnmix/conway-game-of-life)
 
-### [LIVE DEMO](https://conway--game-of-life.herokuapp.com/)
+### - [LIVE DEMO](https://conway--game-of-life.herokuapp.com/)
 
 ### MANUAL DEPLOY
 
