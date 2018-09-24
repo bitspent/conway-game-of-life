@@ -1,6 +1,6 @@
 const app = {
 
-    REFRESH_RATE_MS: 500,
+    REFRESH_RATE_MS: 250,
 
     /* no added logic, direct link */
     requestNewColor: wsc.requestNewColor,

@@ -78,9 +78,19 @@ const presenter = {
         /*
          * still life - preset button
          */
+
+        let rand = (min, max) => {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            // maximum is exclusive, minimum is inclusive
+            return Math.floor(Math.random() * (max - min)) + min;
+        };
+
         $('btn-preset-1').onclick = () => {
             presenter.toast('Still Life Preset Injection', 1000);
-            [2515, 2516, 2615, 2616].forEach((i) => app.requestSeed(i, app.color));
+            let base = rand(1000, 4000);
+            let points = [base, base + 1, base + 100, base + 101];
+            points.forEach((i) => app.requestSeed(i, app.color));
         };
 
         /*
@@ -88,7 +98,9 @@ const presenter = {
          */
         $('btn-preset-2').onclick = () => {
             presenter.toast('Oscillator Preset Injection', 1000);
-            [3256, 3257, 3258].forEach((i) => app.requestSeed(i, app.color));
+            let base = rand(1000, 4000);
+            let points = [base, base + 1, base + 2];
+            points.forEach((i) => app.requestSeed(i, app.color));
         };
 
         /*
@@ -96,7 +108,9 @@ const presenter = {
          */
         $('btn-preset-3').onclick = () => {
             presenter.toast('SpaceShip Preset Injection', 1000);
-            [356, 457, 458, 557, 556].forEach((i) => app.requestSeed(i, app.color));
+            let base = rand(1000, 4000);
+            let points = [base, base + 101, base + 102, base + 201, base + 200];
+            points.forEach((i) => app.requestSeed(i, app.color));
         };
     },
 

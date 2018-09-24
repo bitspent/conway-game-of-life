@@ -5,7 +5,9 @@ tools = require('./helper.js');
  */
 let conway = {
 
-    gridWidth: 100 // canvas width 800 / block width
+    FRAME_RATE_MS: 500 // 0.7 second
+
+    , gridWidth: 100 // canvas width 800 / block width
 
     , gridHeight: 50 // canvas height 400 / block width
 
@@ -76,20 +78,26 @@ let conway = {
             let dir = directions[i];
             let dirX = x + dir.x;
             let dirY = y + dir.y;
-            if (dirX >= 0 && dirX < conway.gridWidth && dirY >= 0 && dirY < conway.gridHeight) {
-                let index = dirX + (dirY * conway.gridWidth);
-                neighbours += conway.grid[index] ? 1 : 0;
-                if (conway.grid[index]) {
-                    if (avg === null) {
-                        avg = conway.colors[index];
-                    } else if (conway.colors[index] !== null) {
-                        avg = tools.colorAverage(avg, conway.colors[index]);
-                    }
+
+            // do the cycle - finite field
+            if (dirX === -1) dirX = conway.gridWidth - 1;
+            if (dirX === conway.gridWidth) dirX = 0;
+            if (dirY === -1) dirY = conway.gridHeight - 1;
+            if (dirY === conway.gridHeight) dirY = 0;
+            // end cycle checks
+
+            let index = dirX + (dirY * conway.gridWidth);
+            neighbours += conway.grid[index] ? 1 : 0;
+
+            // one shot color averaging calculation
+            if (conway.grid[index]) {
+                if (avg === null) {
+                    avg = conway.colors[index];
+                } else if (conway.colors[index] !== null) {
+                    avg = tools.colorAverage(avg, conway.colors[index]);
                 }
             }
         }
-
-        //console.log('cell [' + cell + '] has [' + neighbours + '] neighbours');
 
         return [neighbours, avg];
     },
@@ -123,7 +131,7 @@ let conway = {
      */
     loop: function () {
         conway.nextGeneration();
-        setTimeout(conway.loop, 1000);
+        setTimeout(conway.loop, conway.FRAME_RATE_MS);
     },
 
     /**
