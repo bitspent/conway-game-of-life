@@ -1,5 +1,7 @@
 ### [HEROKU ONE CLICK DEPLOY](https://www.heroku.com/deploy/?template=https://github.com/nnmix/conway-game-of-life)
 
+### [LIVE DEMO](https://conway--game-of-life.herokuapp.com/)
+
 ### MANUAL DEPLOY
 
 make sure you have node on your system, clone the repo or unzip the downoaded package
