@@ -1,5 +1,15 @@
 ### [HEROKU ONE CLICK DEPLOY](https://www.heroku.com/deploy/?template=https://github.com/nnmix/conway-game-of-life)
 
+### MANUAL DEPLOY
+
+make sure you have node on your system, clone the repo or unzip the downoaded package
+
+> npm install
+
+> npm start
+
+accessible locally by default on http://localhost:5000
+
 
 # Conway Game Of Life - Multisession Rules
 
