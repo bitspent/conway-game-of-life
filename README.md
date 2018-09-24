@@ -1,4 +1,4 @@
-# Conway Game Of Life - MultisessionRules
+# Conway Game Of Life - Multisession Rules
 
 All Players share the same world, seed and creation within a specific color
 
