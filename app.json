@@ -2,7 +2,7 @@
   "name": "Conway GameOfLife Multiplayer",
   "description": "Multiplayer Conway Game Of Life",
   "repository": "https://github.com/nnmix/conway-game-of-life",
-  "logo": "https://github.com/nnmix/conway-game-of-life/blob/master/public/icons/pulsar.gif",
+  "logo": "https://raw.githubusercontent.com/nnmix/conway-game-of-life/master/public/icons/pulsar.gif",
   "keywords": ["node", "express", "heroku"],
   "image": "heroku/nodejs"
 }
